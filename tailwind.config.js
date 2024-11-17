@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // Add your JS/TS files (for React or Vue)
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors : {
+        primary: "#4640DE"
+      },
+      fontFamily: {
+        ClashDisplay: ['ClashDisplay','sans-serif']
+      }
+    },
   },
   plugins: [],
 }

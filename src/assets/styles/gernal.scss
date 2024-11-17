@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "ClashDisplay"; /* Name for the font */
+  src: url("../fonts/ClashDisplay-Variable.ttf") format("truetype"); /* Path to the .ttf file */
+  font-weight: normal; /* Normal weight */
+  font-style: normal; /* Normal style */
+}
+
+.bg-size-hero {
+  background-size: 63% 100% !important;
+}
