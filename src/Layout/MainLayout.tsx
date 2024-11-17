@@ -7,7 +7,9 @@ const MainLayout: React.FC = () => {
   return (
     <>
       <Header />
+      <div className="pt-[3.9rem]">
       <Outlet />
+      </div>
       <Footer />
     </>
   );

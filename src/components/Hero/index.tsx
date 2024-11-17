@@ -4,7 +4,7 @@ import { Search, Location } from "../ui-icons/Icons";
 const Hero: React.FC = () => {
   return (
     <div className="bg-[url('/images/Pattern.png')] h-[750px] w-full bg-no-repeat bg-[100%_17px] bg-size-hero bg-[#F8F8FD]">
-      <div className="className='px-[6rem]' pt-[3.9rem] px-[6rem] grid grid-cols-2 items-center h-full">
+      <div className="px-[6rem] grid grid-cols-2 items-center h-full">
         <div>
           <div className="text-[#25324B] font-72 font-semibold font-ClashDisplay leading-[0.6]">
             Discover more
