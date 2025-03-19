@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 export const Signup: React.FC = () => {
   return (
     <>
-      <div className="grid grid-cols-2 h-screen">
-        <div className="flex justify-center items-center flex-col">
+      <div className="grid grid-cols-1 md:grid-cols-2 h-screen">
+        <div className="flex order-2 md:order-none justify-center items-center flex-col">
           <h2 className="font-bold">Sign Up</h2>
           <form className="w-full flex flex-col justify-center items-center">
-            <div className="w-1/2 mt-5">
+            <div className="w-10/12 xl:w-1/2 mt-5">
               <label
                 htmlFor="Name"
                 className="block text-md font-medium text-gray-700"
@@ -23,7 +23,7 @@ export const Signup: React.FC = () => {
               />
             </div>
             {/* Email Field */}
-            <div className="w-1/2 mt-4">
+            <div className="w-10/12 xl:w-1/2 mt-4">
               <label
                 htmlFor="email"
                 className="block text-md font-medium text-gray-700"
@@ -38,7 +38,7 @@ export const Signup: React.FC = () => {
               />
             </div>
             {/* Password Field */}
-            <div className="w-1/2 mt-4 mb-7">
+            <div className="w-10/12 xl:w-1/2 mt-4 mb-7">
               <label
                 htmlFor="password"
                 className="block text-md font-medium text-gray-700"
@@ -55,7 +55,7 @@ export const Signup: React.FC = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-1/2 px-4 py-2 text-white bg-primary rounded-md hover:bg-primary focus:ring-4 focus:ring-primary focus:ring-opacity-50"
+              className="w-10/12 xl:w-1/2 px-4 py-2 text-white bg-primary rounded-md hover:bg-primary focus:ring-4 focus:ring-primary focus:ring-opacity-50"
             >
               Sign Up
             </button>
@@ -70,7 +70,7 @@ export const Signup: React.FC = () => {
             </div>
           </form>
         </div>
-        <div className="bg-primary flex justify-center items-center rounded-s-[25px]">
+        <div className="bg-primary order-1 md:order-none hidden sm:flex justify-center items-center rounded-s-[25px]">
           <img
             src="/images/signup.png"
             alt=""

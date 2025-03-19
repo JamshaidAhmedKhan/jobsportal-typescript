@@ -88,25 +88,25 @@ console.log(companies);
 
 const BrowseCompanies: React.FC = () => {
   return (
-    <div className="px-[6rem] mt-10">
+    <div className="px-[2rem] sm:px-[4rem] md:px-[6rem] mt-10">
       <h2 className="font-semibold">Browse Top Companies!</h2>
       <div className="mt-10 z-10 w-full relative">
-        <div className="bg-white py-[14px] w-full px-3 grid grid-cols-5 rounded-md shadow-md border-2 shadow-slate-100">
-          <div className="flex relative ml-3 mr-3 col-span-2">
+        <div className="bg-white py-[14px] w-full px-3 gap-y-4 grid md:grid-cols-2 lg:grid-cols-3 rounded-md shadow-md border-2 shadow-slate-100">
+          <div className="flex relative lg:ml-3 md:mr-3">
             <span className="absolute bottom-2 left-3">
               <Search width="20px" />
             </span>
             <input
               type="text"
-              className="border-2 border-[#D6DDEB] w-full py-[2px] rounded-sm pl-10 outline-none focus:border-blue-500 text-sm text-[#25324B]"
+              className="border-2 border-[#D6DDEB] min-h-[40px] w-full py-[2px] rounded-sm pl-10 outline-none focus:border-blue-500 text-sm text-[#25324B]"
               placeholder="Company Name"
             />
           </div>
-          <div className="flex relative ml-5 col-span-2">
+          <div className="flex relative lg:ml-5">
             <div className="absolute bottom-2 left-3">
               <Location width="20px" />
             </div>
-            <select className="border-2 w-full text-sm border-[#D6DDEB] rounded-sm pl-10 pr-5 outline-none focus:border-blue-500 text-[#25324B]">
+            <select className="border-2 w-full text-sm min-h-[40px] border-[#D6DDEB] rounded-sm pl-10 pr-5 outline-none focus:border-blue-500 text-[#25324B]">
               <option value="" disabled selected>
                 Select location
               </option>
@@ -114,14 +114,14 @@ const BrowseCompanies: React.FC = () => {
               <option value="another">Another Option</option>
             </select>
           </div>
-          <button className="bg-primary px-4 col-span-1 py-[10px] ml-8 font-semibold rounded-sm text-white">
+          <button className="bg-primary px-4 py-[10px] md:mr-3 lg-mr-0 lg:ml-8 font-semibold rounded-sm text-white">
             Find Job
           </button>
         </div>
       </div>
       <div className="my-10">
         <div className="mt-10">
-          <div className="grid grid-cols-2 gap-7">
+          <div className="grid md:grid-cols-2 gap-7">
             {companies.map((value) => {
               return (
                 <div
@@ -139,7 +139,7 @@ const BrowseCompanies: React.FC = () => {
                         {value?.keywords &&
                           value?.keywords.map((nestValue) => {
                             return (
-                              <span className="rounded-lg font-12 bg-slate-400 px-3 mr-1 py-1 text-black">
+                              <span key={nestValue} className="rounded-lg font-12 break-all my-1 bg-slate-400 px-3 mr-1 py-1 text-black">
                                 {nestValue}
                               </span>
                             );

@@ -77,16 +77,16 @@ let featureJobsList = [
 
 const FeatureJobs: React.FC = () => {
   return (
-    <div className="px-[6rem] mt-[6rem]">
+    <div className="px-[2rem] sm:px-[4rem] md:px-[6rem] mt-[6rem]">
       <h2 className="text-[#25324B] font-bold">
         Featured <span className="text-[#26A4FF]">Jobs</span>
       </h2>
       <div className="mt-10">
-        <div className="grid grid-cols-4 gap-7">
-          {featureJobsList.map((value) => {
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-7">
+          {featureJobsList.map((value,index) => {
             return (
               <div
-                key={value.id}
+                key={index}
                 className="border px-6 py-8 flex justify-center flex-col border-stone-300"
               >
                 <div className="flex justify-between items-center">

@@ -93,7 +93,7 @@ export function Search({ ...props }) {
   );
 }
 
-export function RightArrow({...props}) {
+export function RightArrow({ ...props }) {
   return (
     <svg
       width="24"
@@ -121,7 +121,7 @@ export function RightArrow({...props}) {
   );
 }
 
-export function HR({...props}) {
+export function HR({ ...props }) {
   return (
     <svg
       width="48"
@@ -141,7 +141,7 @@ export function HR({...props}) {
   );
 }
 
-export function HTML({...props}) {
+export function HTML({ ...props }) {
   return (
     <svg
       width="48"
@@ -162,7 +162,7 @@ export function HTML({...props}) {
   );
 }
 
-export function Marketing({...props}) {
+export function Marketing({ ...props }) {
   return (
     <svg
       width="48"
@@ -183,7 +183,7 @@ export function Marketing({...props}) {
   );
 }
 
-export function Sales({...props}) {
+export function Sales({ ...props }) {
   return (
     <svg
       width="48"
@@ -239,7 +239,7 @@ export function Sales({...props}) {
   );
 }
 
-export function Tech({...props}) {
+export function Tech({ ...props }) {
   return (
     <svg
       width="48"
@@ -260,7 +260,7 @@ export function Tech({...props}) {
   );
 }
 
-export function Business({...props}) {
+export function Business({ ...props }) {
   return (
     <svg
       width="48"
@@ -281,7 +281,7 @@ export function Business({...props}) {
   );
 }
 
-export function Design({...props}) {
+export function Design({ ...props }) {
   return (
     <svg
       width="48"
@@ -344,7 +344,7 @@ export function Design({...props}) {
   );
 }
 
-export function Finance({...props}) {
+export function Finance({ ...props }) {
   return (
     <svg
       width="48"
@@ -360,6 +360,26 @@ export function Finance({...props}) {
         stroke-width="3"
         stroke-linecap="round"
         stroke-linejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function Hamburger({ ...props }) {
+  return (
+    <svg
+      width="36"
+      height="36"
+      viewBox="0 0 36 36"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" fill="white" />
+      <rect x="0.5" y="0.5" width="35" height="35" rx="17.5" stroke="#D6DDEB" />
+      <path
+        d="M18.8334 21.3333H10.5001C10.2791 21.3333 10.0671 21.4211 9.91083 21.5774C9.75455 21.7337 9.66675 21.9457 9.66675 22.1667C9.66675 22.3877 9.75455 22.5996 9.91083 22.7559C10.0671 22.9122 10.2791 23 10.5001 23H18.8334C19.0544 23 19.2664 22.9122 19.4227 22.7559C19.579 22.5996 19.6667 22.3877 19.6667 22.1667C19.6667 21.9457 19.579 21.7337 19.4227 21.5774C19.2664 21.4211 19.0544 21.3333 18.8334 21.3333ZM10.5001 14.6667H25.5001C25.7211 14.6667 25.9331 14.5789 26.0893 14.4226C26.2456 14.2663 26.3334 14.0543 26.3334 13.8333C26.3334 13.6123 26.2456 13.4004 26.0893 13.2441C25.9331 13.0878 25.7211 13 25.5001 13H10.5001C10.2791 13 10.0671 13.0878 9.91083 13.2441C9.75455 13.4004 9.66675 13.6123 9.66675 13.8333C9.66675 14.0543 9.75455 14.2663 9.91083 14.4226C10.0671 14.5789 10.2791 14.6667 10.5001 14.6667ZM25.5001 17.1667H10.5001C10.2791 17.1667 10.0671 17.2545 9.91083 17.4107C9.75455 17.567 9.66675 17.779 9.66675 18C9.66675 18.221 9.75455 18.433 9.91083 18.5893C10.0671 18.7455 10.2791 18.8333 10.5001 18.8333H25.5001C25.7211 18.8333 25.9331 18.7455 26.0893 18.5893C26.2456 18.433 26.3334 18.221 26.3334 18C26.3334 17.779 26.2456 17.567 26.0893 17.4107C25.9331 17.2545 25.7211 17.1667 25.5001 17.1667Z"
+        fill="#25324B"
       />
     </svg>
   );

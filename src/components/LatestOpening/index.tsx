@@ -80,17 +80,17 @@ const LatestOpening: React.FC = () => {
   return (
     <div className="bg-[url('/images/BG.png')] min-h-[900px] w-full bg-no-repeat bg-cover mt-[6rem]">
       <div className="bg-[url('/images/PatternDown.png')] min-h-[900px] w-full bg-no-repeat bg-[100%_0] bg-size-hero">
-      <div className='px-[6rem] pt-[4rem]'>
+      <div className='px-[2rem] sm:px-[4rem] md:px-[6rem] pt-[4rem]'>
       <div className="flex justify-between items-end">
-        <h2 className="text-[#25324B] font-bold">
+        <h2 className="text-[#25324B] font-bold text-[32px] md:text-[42px]">
           Explore By <span className="text-[#26A4FF]">Category</span>
         </h2>
-        <button className="text-primary underline flex items-center">
+        <button className="text-primary underline hidden md:flex items-center">
           <span className="mr-3">Show all jobs</span> <RightArrow />
         </button>
       </div>
       <div className="mt-10">
-        <div className="grid grid-cols-2 gap-7">
+        <div className="grid md:grid-cols-2 gap-7">
           {latestJobsList.map((value) => {
             return (
               <div
@@ -120,6 +120,9 @@ const LatestOpening: React.FC = () => {
             );
           })}
         </div>
+        <button className="text-primary underline flex md:hidden mb-6 items-center">
+          <span className="mr-3">Show all jobs</span> <RightArrow />
+        </button>
       </div>
       </div>
       </div>

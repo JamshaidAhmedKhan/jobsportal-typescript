@@ -56,16 +56,16 @@ let categoryList = [
 
 const ExploreCategory: React.FC = () => {
   return (
-    <div className="px-[6rem] mt-[5rem]">
+    <div className="px-[2rem] sm:px-[4rem] md:px-[6rem] mt-[5rem]">
       <div className="flex justify-between items-end">
-        <h2 className="text-[#25324B] font-bold">
+        <h2 className="text-[#25324B] font-bold text-[32px] md:text-[42px]">
           Explore By <span className="text-[#26A4FF]">Category</span>
         </h2>
-        <button className="text-primary underline flex items-center">
+        <button className="text-primary underline hidden md:flex items-center">
           <span className="mr-3">Show all jobs</span> <RightArrow />
         </button>
       </div>
-      <div className="grid grid-cols-4 mt-10 gap-7">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 mt-10 gap-7">
         {categoryList.map((value) => {
           return <div key={value.id} className="border px-6 h-44 flex justify-center flex-col border-stone-300">
             {value.categoryImage}
@@ -74,6 +74,9 @@ const ExploreCategory: React.FC = () => {
           </div>;
         })}
       </div>
+      <button className="text-primary underline flex md:hidden items-center">
+          <span className="mr-3">Show all jobs</span> <RightArrow />
+        </button>
     </div>
   );
 };

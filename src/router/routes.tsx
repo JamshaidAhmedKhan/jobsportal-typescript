@@ -1,6 +1,6 @@
 import { createBrowserRouter as Router } from "react-router-dom";
-import Login from "../pages/auth/login";
-import { Signup } from "../pages/auth/signup";
+import Login from "../pages/auth/Login";
+import { Signup } from "../pages/auth/Signup";
 import Home from "../pages/Home";
 import MainLayout from "../Layout/MainLayout";
 import FindJobs from "../pages/FindJobs";
